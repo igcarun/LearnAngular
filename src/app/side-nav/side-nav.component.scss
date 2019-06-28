@@ -1,0 +1,33 @@
+
+.navigation {
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    a {
+        padding: 10px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .navigation {
+      /* When on medium sized screens, we center it by evenly distributing empty space around items */
+      justify-content: flex-end;
+    }
+  }
+
+  @media all and (max-width: 540px) {
+    .navigation {
+      /* When on medium sized screens, we center it by evenly distributing empty space around items */
+      flex-direction: column;
+    }
+  }
+  
+  

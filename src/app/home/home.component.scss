@@ -1,0 +1,41 @@
+.container {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+.relative{
+    position: relative;
+}
+.mini_container {
+    width: 100%;
+    height: auto;
+    // background: #ccc;
+    position: absolute;
+    top:50vh;
+    text-align: center;
+    translate: transform(-50%, -50%);
+}
+
+
+section p {
+    margin: 0px;
+    padding-bottom: 40px;
+}
+.parallax {
+    height: 700px;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.parallax1 {
+    background-image: url("http://2.bp.blogspot.com/-TRzwGuEv0J8/VG9uR9Xh8II/AAAAAAAAPqs/76d43BGSHQQ/s1600/24640wall.jpg")
+}
+
+.parallax2 {
+    background-image: url("https://i.pinimg.com/originals/91/3e/12/913e12766a77d5364e1d5548c34f7a8e.jpg")
+}
+
+section p:last-child {
+    padding-bottom: 0px;
+}

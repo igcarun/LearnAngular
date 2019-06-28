@@ -1,0 +1,71 @@
+.arc {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    // background-color: #ccc;
+    border-top: 5px solid #ff0000;
+    position: absolute;    
+    animation: rotates 2s linear infinite;
+    top: 50%;
+    left: 50%;
+}
+
+.arc::before,.arc::after{
+    content: '';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+    top: -5%;
+    
+}
+
+.arc::after {
+    border-top: 5px solid #0f0;
+    transform: rotate(120deg)
+}
+
+.arc::before {
+    border-top: 5px solid #00f;
+    transform: rotate(-120deg);
+}
+
+@keyframes rotates {
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes arc-rotates {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+.arc-rotates {
+    animation: arc-rotates 2s linear infinite;
+    width: 100px;
+    height: 100px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 100px;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+.flex-child {
+    width: 100px;
+    height: 50px;
+    margin: auto;
+}
+
+.flex-child1{
+    width: 150px;
+    height: 50px;
+}

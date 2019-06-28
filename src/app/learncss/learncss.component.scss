@@ -1,0 +1,187 @@
+$color: #ff0;
+
+.container {
+background-color: #ccc;
+}
+
+.element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid rgba(110, 37, 37, 0.603);
+    background: tomato;
+    text-align: center;
+}
+
+.buttons {
+    width: 75px;
+    height: 75px;
+    font-size: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #f00;
+    background-image: linear-gradient(90deg, red, yellow);
+    transition: 1s;
+}
+
+.buttons:hover {
+    background: rgb(235, 6, 6);
+    transition: 1s;
+    background-image: linear-gradient(90deg, yellow, red);
+    transform: rotate(360deg);
+}
+
+.outer {
+    border: #ccc solid 3px;
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    background-color: #fff;
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    position: absolute;
+    background-image: url('https://allthatsinteresting.com/wordpress/wp-content/uploads/2018/12/bear-head-in-snow.jpg');
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    display: block;
+}
+
+.inner {
+    border: #fff solid 2px;
+    position: absolute;
+    border-radius: 50%;
+    width: 40%;
+    height: 40%;
+    bottom: -20%;
+    right: -20%;
+    background-image: url('https://allthatsinteresting.com/wordpress/wp-content/uploads/2018/12/seal-penguins.jpg');
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.square-outer {
+    width: 240px;
+    height: 160px;
+    background-image: url('https://allthatsinteresting.com/wordpress/wp-content/uploads/2018/12/seal-penguins.jpg');
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border: #ccc solid 1px;
+    border-radius: 3px;
+    z-index: 0;
+}
+
+.square-outer:hover {
+    border: 6px solid #ccc;
+    z-index: 1;
+    .hide-menu {
+        display: block;
+        text-align: center;
+        transition: 10s;
+        .quarter {
+            max-width: 66%;
+            max-height: 60%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.square-inner {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    bottom: 0%;
+    position: absolute;
+}
+
+.square-circle {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    right: 6%;
+    top: -30%;
+    text-align: center;
+}
+
+.time {
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%)
+}
+
+.divs {
+    text-align: center;
+    position: absolute;
+}
+
+.hide-menu {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top:-9%;
+    right: -5%;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+}
+
+.btn {
+    background-color: transparent;
+}
+
+.arrow {
+    font-size: 35px;
+    left: 50%;
+    right: 50%;
+    position: absolute;
+    transform: rotate(90deg);
+    transition: 2s infinite;
+    animation: arrowanim 1s infinite;
+    background: #f00;
+    color: $color;
+}
+
+@keyframes arrowanim {
+    0% {
+        top: 0%;
+        position: absolute;
+        $color: #f00;
+        color: $color;
+    }
+
+    50% {
+        top: 20px;
+        $color: #ff0;
+        color: $color;
+    }
+
+    100% {
+        top: 0%;
+        position: absolute;
+        $color: #f00;
+        color: $color;
+    }
+}
+
+.abcd {
+    background-color: $color;
+}
