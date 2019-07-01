@@ -7,11 +7,11 @@ import { LoadingComponent } from './loading/loading.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 
 const routes: Routes = [
-  { path: 'learncss', component: LearncssComponent },
-  { path: 'loading', component: LoadingComponent },
+  { path: 'learncss/', component: LearncssComponent },
+  { path: 'loading/', component: LoadingComponent },
   { path: 'sidenav', component: SideNavComponent},
   { path: 'intersection', component: IntersectionComponent},
-  { path: '', pathMatch: 'full', component: HomeComponent}
+  { path: '/', pathMatch: 'full', component: HomeComponent}
 ];
 
 @NgModule({

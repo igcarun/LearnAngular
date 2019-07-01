@@ -20,17 +20,17 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     sessionStorage.setItem('appadi podu', 'hey intha');
     localStorage.setItem('parren', 'local storeagea');
-    this.testService.getRapid().subscribe((confis: Datas) => {
-      console.log(confis);
-    }, (error: any) => {
-        console.log('error occured');
-    });
+    // this.testService.getRapid().subscribe((confis: Datas) => {
+    //   console.log(confis);
+    // }, (error: any) => {
+    //     console.log('error occured');
+    // });
 
-    this.testService.getPostman().subscribe((confis: Datas) => {
-      console.log(confis);
-    }, (error: any) => {
-      console.log('error occured post users');
-    });
+    // this.testService.getPostman().subscribe((confis: Datas) => {
+    //   console.log(confis);
+    // }, (error: any) => {
+    //   console.log('error occured post users');
+    // });
 
   }
 
