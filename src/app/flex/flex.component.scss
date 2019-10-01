@@ -1,0 +1,40 @@
+.flex-direction {
+    display: flex;
+    background-color: aqua;
+    flex-direction: row;
+    height: 200px;
+    align-items: flex-start;
+}
+
+.flex-direction > div {
+    padding: 15px;
+    background-color: chocolate;
+    margin: 10px;
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+}
+
+.flex-wraps {
+    display: flex;
+    background-color: aqua;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.flex-wraps > div {
+    padding: 15px;
+    background-color: chocolate;
+    margin: 10px;
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+}
+
+div ~ p {
+    background-color: green;
+    height: 20px;
+}

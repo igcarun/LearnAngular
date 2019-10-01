@@ -1,0 +1,40 @@
+.mediaWorks {
+  width: 45%;
+  background-color: aqua;
+}
+
+
+.columns {
+  clear: both;
+}
+
+.columns-1 {
+  float:left;
+  width: 50%;
+  background-color: aqua;
+}
+
+.columns-2 {
+  float:right;
+  width: 50%;
+  background-color: burlywood;
+}
+
+@media only screen and (max-width: 480px) {
+  .mediaWorks {
+    width: 100%;
+    background-color: brown;
+  }
+
+  .columns {
+    column-count: 1;
+  }
+
+  .columns-1 {
+    width: 100%;
+  }
+
+  .columns-2 {
+    width: 100%;
+  }
+}

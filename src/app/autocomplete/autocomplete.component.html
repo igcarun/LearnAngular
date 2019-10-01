@@ -1,0 +1,25 @@
+<form class="example-form" #formse="ngForm">
+<mat-form-field class="example-full-width">
+    <input matInput [formControl]="autoCompletes" type="text" [matAutocomplete]="autos" placeholder="values" aria-label="Number" />
+    <mat-autocomplete #autos="matAutocomplete">
+        <mat-option *ngFor="let values of filteredOptions | async" [value]="values">
+            {{values}}
+        </mat-option>
+    </mat-autocomplete>
+</mat-form-field>
+</form>
+
+<form class="example-form" #myformse="ngForm">
+    <mat-form-field class="example-full-width">
+        <input matInput [formControl]="myAutoCompletes" type="text" [matAutocomplete]="myautos" placeholder="values" aria-label="Number" />
+        <mat-autocomplete #myautos="matAutocomplete" [displayWith]="displayfns" autoActiveFirstOption>
+            <mat-option *ngFor="let values of myFilteredOptions | async" [value]="values">
+                {{values.name}}
+            </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+    </form>
+
+    <!-- matcheckbox -->
+
+    <mat-checkbox [labelPosition]="'before'">Check this</mat-checkbox>

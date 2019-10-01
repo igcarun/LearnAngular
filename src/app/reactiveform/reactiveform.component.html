@@ -1,0 +1,62 @@
+<label>
+    Name
+    <input [formControl] = "name" type="text"/>
+</label>
+
+<button type="submit" [disabled]="name.invalid">Name enabled</button>
+
+<form [formGroup]="userDetails" (ngSubmit)="submit()">
+
+    <label>
+        FirstName
+        <input type="text" formControlName="firstName">
+    </label>
+
+    <label>
+        LastName
+        <input type="text" formControlName="lastName">
+    </label>
+
+    <form formGroupName="address">
+
+        <label>
+            Street
+            <input type="text" formControlName="street" required/>
+        </label>
+
+        <label>
+            City
+            <input type="text" formControlName="city"/>
+        </label>
+
+        <label>
+            State
+            <input type="text" formControlName="state"/>
+        </label>
+    </form>
+
+    <button type="submit" [disabled]="!userDetails.valid">Submit</button>
+
+</form>
+
+<button (click)="update()">Update</button>
+
+<form [formGroup]="formArrayGroup" (ngSubmit)="builderSubmit()">
+
+<div *ngFor="let username of formArrays?.controls; let i = index" formArrayName="formArrays">
+
+  <form [formGroupName]="i">
+    <label>Size
+    <input type="text" formControlName="size"/>
+  </label>
+    <label>Price
+      <input type="text" formControlName="price"/>
+    </label>
+  </form>
+ 
+</div>
+
+<button (click)="addUser()">Add User</button>
+<button type="submit" [disabled]="formArrayGroup.invalid || !isChangeValues">Builder Submit</button>
+
+</form>

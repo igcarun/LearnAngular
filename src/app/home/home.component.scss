@@ -16,14 +16,8 @@
     translate: transform(-50%, -50%);
 }
 
-
-section p {
-    margin: 0px;
-    padding-bottom: 40px;
-}
 .parallax {
     height: 700px;
-    background-position: 50% 50%;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -34,8 +28,4 @@ section p {
 
 .parallax2 {
     background-image: url("https://i.pinimg.com/originals/91/3e/12/913e12766a77d5364e1d5548c34f7a8e.jpg")
-}
-
-section p:last-child {
-    padding-bottom: 0px;
 }

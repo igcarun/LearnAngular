@@ -40,12 +40,12 @@ export class AppComponent implements OnInit {
 
   @HostListener('window:focus', ['$event'])
   onFocus(event: any): void {
-      console.log(new Date());
+      // console.log(new Date());
   }
 
   @HostListener('window:blur', ['$event'])
   onBlur(event: any): void {
-     console.log('appadi podu');
+    //  console.log('appadi podu');
   }
 
 }
