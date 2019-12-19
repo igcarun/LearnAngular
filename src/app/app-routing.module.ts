@@ -10,6 +10,7 @@ import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { FlexComponent } from './flex/flex.component';
 import { ContentLearnComponent } from './content-learn/content-learn.component';
 import { MediaLearnComponent } from './media-learn/media-learn.component';
+import { PositionComponent } from './position/position.component';
 
 const routes: Routes = [
   { path: 'learncss', component: LearncssComponent },
@@ -21,8 +22,10 @@ const routes: Routes = [
   { path: 'flex', component: FlexComponent},
   { path: 'contentLearn', component: ContentLearnComponent},
   { path: 'mediaLearn', component: MediaLearnComponent },
-  { path: '', pathMatch: 'full', component: HomeComponent}
-];
+  { path: 'position', component: PositionComponent },
+  { path: '', pathMatch: 'full', component: HomeComponent},
+  { path: 'fromscratch', 
+  loadChildren: () => import('./fromscratch/fromscratch.module').then(m => m.FromscratchModule)}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

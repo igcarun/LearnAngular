@@ -36,4 +36,8 @@ export class MyLibComponent implements OnInit, AfterContentInit, AfterViewInit {
     console.log(this.libraryComponent);
   }
 
+  pings(): void {
+    console.log('stash 3');
+  }
+
 }

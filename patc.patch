@@ -1,0 +1,13 @@
+diff --git a/projects/my-lib/src/lib/my-lib.component.ts b/projects/my-lib/src/lib/my-lib.component.ts
+index 48bb3b6..40ecd53 100644
+--- a/projects/my-lib/src/lib/my-lib.component.ts
++++ b/projects/my-lib/src/lib/my-lib.component.ts
+@@ -36,4 +36,8 @@ export class MyLibComponent implements OnInit, AfterContentInit, AfterViewInit {
+     console.log(this.libraryComponent);
+   }
+ 
++  pings(): void {
++    console.log('stash 3');
++  }
++
+ }

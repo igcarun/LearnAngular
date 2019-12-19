@@ -5,7 +5,6 @@ import { LibraryComponent } from './library/library.component';
 @NgModule({
   declarations: [MyLibComponent, LibraryComponent],
   imports: [
-    LibraryComponent
   ],
   exports: [MyLibComponent, LibraryComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]

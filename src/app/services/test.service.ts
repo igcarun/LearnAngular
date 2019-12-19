@@ -17,18 +17,18 @@ export class TestService {
         return headers;
     }
 
-    // getRapid(): Observable<Datas> {
-    //     return this.httpClient.get<Datas>('http://localhost:3000/user/address?city=chennai',  { headers: this.getHeaders()})
-    //     .pipe(map((data: Datas) => {
-    //         return data;
-    //     }
-    //     ));
-    // }
+    getRapid(): Observable<Datas> {
+        return this.httpClient.get<Datas>('http://localhost:3000/user/address?city=chennai',  { headers: this.getHeaders()})
+        .pipe(map((data: Datas) => {
+            return data;
+        }
+        ));
+    }
 
-    // getPostman(): Observable<Datas> {
-    //     return this.httpClient.post<Datas>('http://localhost:3000/users', {'city': 'ArunChennai'}, {headers: this.getHeaders()})
-    //     .pipe(map((data: Datas) => {
-    //         return data;
-    //     }));
-    // }
+    getPostman(): Observable<Datas> {
+        return this.httpClient.post<Datas>('http://localhost:3000/users', {'city': 'ArunChennai'}, {headers: this.getHeaders()})
+        .pipe(map((data: Datas) => {
+            return data;
+        }));
+    }
 }

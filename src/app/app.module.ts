@@ -21,8 +21,10 @@ import { MatInputModule, MatFormFieldModule, MatAutocompleteModule, MatSelectMod
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { FlexComponent } from './flex/flex.component';
 import { ContentLearnComponent } from './content-learn/content-learn.component';
-import { MyLibComponent } from 'projects/my-lib/src/public-api';
+import { MyLibModule } from 'projects/my-lib/src/public-api';
 import { MediaLearnComponent } from './media-learn/media-learn.component';
+import { PositionComponent } from './position/position.component';
+import { FromscratchModule } from './fromscratch/fromscratch.module';
 
 const config = {
   breakPoints: {
@@ -48,15 +50,16 @@ const config = {
     AutocompleteComponent,
     ReactiveformComponent,
     FlexComponent,
-    MyLibComponent,
     ContentLearnComponent,
-    MediaLearnComponent
+    MediaLearnComponent,
+    PositionComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
+    MyLibModule,
     HttpClientModule,
     ReactiveFormsModule,
     MatFormFieldModule,
@@ -66,7 +69,8 @@ const config = {
     MatCheckboxModule,
     MatButtonModule,
     MatAutocompleteModule,
-    ResponsiveModule.forRoot(config)
+    ResponsiveModule.forRoot(config),
+    FromscratchModule
   ],
   providers: [TestService],
   bootstrap: [AppComponent]

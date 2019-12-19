@@ -85,7 +85,7 @@ export class ReactiveformComponent implements OnInit {
   }
 
   update() {
-    this.userDetails.setValue({
+    this.userDetails.patchValue({
       firstName: 'ArunGunal',
       address: {
         street: 'Sevur',
