@@ -8,7 +8,7 @@ import { MyLibComponent } from 'projects/my-lib/src/public-api';
 })
 export class ContentLearnComponent implements OnInit, AfterViewInit, AfterContentInit {
 
-  @ViewChild(MyLibComponent, {static: false}) myLibComponent: MyLibComponent;
+  @ViewChild(MyLibComponent) myLibComponent: MyLibComponent;
 
   ngAfterViewInit(): void {
     console.log('AfterViewInit');

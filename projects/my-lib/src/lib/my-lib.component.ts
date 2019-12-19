@@ -9,9 +9,9 @@ import { LibraryComponent } from './library/library.component';
   styles: []
 })
 export class MyLibComponent implements OnInit, AfterContentInit, AfterViewInit {
-  @ContentChild(AutocompleteComponent, {static: false}) autocompleteComponent: AutocompleteComponent;
-  @ContentChild(FlexComponent, {static: false}) flexComponent: FlexComponent;
-  @ViewChild(LibraryComponent, {static: false}) libraryComponent: LibraryComponent;
+  @ContentChild(AutocompleteComponent) autocompleteComponent: AutocompleteComponent;
+  @ContentChild(FlexComponent) flexComponent: FlexComponent;
+  @ViewChild(LibraryComponent) libraryComponent: LibraryComponent;
 
   constructor() { }
 
