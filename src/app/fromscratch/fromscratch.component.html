@@ -1,3 +1,6 @@
 <div class="fullview">
   <p>fromscratch works!</p>
+  <app-learnchange [name]="name" (sendvalue)="updatedName($event)"></app-learnchange>
+
+  <button (click)="updatedNames()">Update Name</button>
 </div>

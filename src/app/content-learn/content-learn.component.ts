@@ -14,6 +14,7 @@ export class ContentLearnComponent implements OnInit, AfterViewInit, AfterConten
     console.log('AfterViewInit');
     console.log(this.myLibComponent);
   }
+
   ngAfterContentInit(): void {
     console.log('AfterContentInit');
     console.log(this.myLibComponent);

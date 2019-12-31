@@ -25,8 +25,8 @@ const routes: Routes = [
   { path: 'position', component: PositionComponent },
   { path: '', pathMatch: 'full', component: HomeComponent},
   { path: 'fromscratch', 
-  loadChildren: () => import('./fromscratch/fromscratch.module').then(m => m.FromscratchModule)}];
-
+  loadChildren: () => import('./fromscratch/fromscratch.module').then(m => m.FromscratchModule)},
+];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

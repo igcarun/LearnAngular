@@ -25,6 +25,7 @@ import { MyLibModule } from 'projects/my-lib/src/public-api';
 import { MediaLearnComponent } from './media-learn/media-learn.component';
 import { PositionComponent } from './position/position.component';
 import { FromscratchModule } from './fromscratch/fromscratch.module';
+import { LearnchangeComponent } from './fromscratch/learnchange/learnchange.component';
 
 const config = {
   breakPoints: {
@@ -69,8 +70,8 @@ const config = {
     MatCheckboxModule,
     MatButtonModule,
     MatAutocompleteModule,
-    ResponsiveModule.forRoot(config),
-    FromscratchModule
+    FromscratchModule,
+    ResponsiveModule.forRoot(config)
   ],
   providers: [TestService],
   bootstrap: [AppComponent]
